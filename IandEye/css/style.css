@@ -107,8 +107,26 @@ p {
     border-bottom: #444 dotted 1px;
 }
 
+.navbar-light .navbar-nav .nav-link, .navbar-nav a.dropdown-item {
+    color: blue !important;
+    font-family: sans-serif;
+}
+
+.navbar-light .navbar-nav a:hover {
+    background: #3b5998;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.navbar-nav li.nav-item {
+    padding-left: 10px;
+}
+
+#main-menu-bar {
+    border-bottom: 1px solid #3b5998;
+}
 /* Navbar */
-#navbar {
+/* #navbar {
     display: flex;
     position: sticky;
     top:0;
@@ -119,9 +137,9 @@ p {
     padding: 1rem;
     opacity: 1;
     border-bottom: 1px solid #3b5998;
-}
+} */
 
-#navbar ul {
+/* #navbar ul {
     display: flex;
     align-items: center;
     list-style: none;
@@ -137,7 +155,7 @@ p {
     background: #3b5998;
     color: #fff;
     border-radius: 5px;
-}
+} */
 
 /* New CSS additions*/
 .dropbtn {

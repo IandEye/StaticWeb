@@ -26,7 +26,7 @@ function showSlides(userAction) {
 
   if (!userAction) {
     slideIndex++;
-    setTimeout(showSlides, 2000); // Change image every N seconds
+    setTimeout(showSlides, 4000); // Change image every N seconds
   }
 }
 
