@@ -1,0 +1,94 @@
+.slide {
+    display: none;
+    height: 100%;
+    position: relative;
+}
+
+.slide img{
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* Showcase */
+#slideshow {
+    /*background: #333 url('../img/showcase.jpg') no-repeat center center/cover; */
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+#slideshow .slideshow-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    /* Overlay */
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.slide .content {
+    position: absolute;
+    bottom: 0;
+    background: #3b5998; /* Fallback color */
+    background: rgba(76, 75, 122, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #3b5998;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

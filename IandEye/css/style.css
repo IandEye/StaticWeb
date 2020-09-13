@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+@font-face {
+    font-family: GoodTimes;
+    src: url(/fonts/good-times.regular.ttf);
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.text-primary {
+    color: blue;
+}
+
+.bg-light {
+    background: #ffffff;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-blue {
+    background: #3b5998;
+    color: #fff;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+.py-0 { padding: 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #93cb52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #3b5998;
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top:0;
+    background: #fff;
+    color: #3b5998;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+    opacity: 1;
+    border-bottom: 1px solid #3b5998;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: blue;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background: #3b5998;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* New CSS additions*/
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 0 !important;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #fff;}
+
+/* Section: projects We Do */
+#projects .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#projects .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#projects .items .item i {
+    background: blue;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.project-title {
+    color: blue;
+}
+
+
+/* Section: mission */
+#mission {
+    display: flex;
+    background-color: #3b5998;
+}
+#mission div {
+    flex: 1;
+    flex-basis: 50%;
+}
+#mission .mission-text, #mission .mission-img {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+#mission .mission-text {
+    margin-left: 1%;
+    margin-right: 0.5%;
+}
+#mission .mission-img {
+    margin-right: 1%;
+    margin-left: 0.5%;
+}
+
+#mission .mission-text p {
+    text-align: justify;
+}
+/* Section: who */
+#who {
+    display: flex;
+    background-color: #3b5998;
+}
+#who div {
+    flex: 1;
+    flex-basis: 50%;
+}
+#who .who-img, #who .who-text {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+#who .who-img {
+    margin-left: 1%;
+}
+#who .who-text {
+    margin-right: 1%;
+}
+#who .who-img {
+    background: url('../img/who.jpg') no-repeat center center/cover;
+}
+
+/* Section: Contact */
+#contact {
+    display: flex;
+    background-color: #3b5998;
+}
+
+/* Section: Clients */
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+/* Section: Contact */
+
+#contact .map, #contact .contact-text {
+    flex: 1;
+    flex-basis: 50%;
+}
+
+#projectitem{
+    height: 300px;
+}
+#projectitem img{
+    width: 100%;
+    height: inherit;
+}
+
+#schemes .schemes-intro{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#schemes .schemes-details{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    background-color: #d5dbf3;
+}
+
+.logo-name {
+    font-family: GoodTimes;
+    font-size: 12px;
+    color: #1cbde1;
+    font-weight: bold;
+}
